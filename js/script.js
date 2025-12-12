@@ -1,24 +1,39 @@
 // seleziono tutti i campi
-const timer = document.getElementById("coountdown");
-const numbersList = document.getElementById("number-list");
+const timer = document.getElementById("countdown");
+const numbersList = document.getElementById("numbers-list");
 const buttonConfirm = document.querySelector("btn-primary");
 const messageDanger = document.querySelector("text-danger");
 const selectionNumber = document.getElementById("answers-form");
 
 //far visualizzare al utente 5 numeri casuali
-function genRandomNumInRange(0, 50) {
-    return Math.floor(Math.random() * (0 - 50 + 1)) + min;
-};
+let = Result;
 
+for (i = 0, let, i < 5, i++) {
+    function getRandomIntInclusive(min, max) {
+        const minCeiled = Math.ceil(min);
+        const maxFloored = Math.floor(max);
+        return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled); // The maximum is inclusive and the minimum is inclusive
+    }
+}
+console.log(getRandomIntInclusive(0, 50));
+
+numbersList.innerText = getRandomIntInclusive(0, 50);
+numbersList.innerText = Result
 
 //fai partire un timer di 30 secondi 
-setTimeout (myfunction , 1000);
 
-let seconds = 2 seconds;
+let seconds = 10;
 
 timer.innerText = seconds;
 
-const in
+const tims = setInterval(() => {
+    if (seconds === 0) {
+        clearInterval(tims)
+    } else {
+        seconds = seconds - 1;
+        timer.innerText = seconds
+    }
+}, 1000)
 
 
 
