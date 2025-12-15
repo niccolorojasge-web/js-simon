@@ -40,6 +40,7 @@ const tims = setInterval(() => {
 
 
 //far apparire 5 input in cui l utente deve inserire i 5 numeri 
+//usando display //
 
 
 
